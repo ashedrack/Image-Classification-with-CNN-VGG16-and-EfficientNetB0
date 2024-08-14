@@ -59,6 +59,7 @@ async def predict(file: UploadFile = File(...)):
         logging.error(f"Prediction error: {e}")
         raise HTTPException(status_code=500, detail="Could not get a prediction from the model.")
 
+import uvicorn
+
 if __name__ == "__main__":
-    # For local development, reload=True is useful
-    uvicorn.run("backend_app:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("backend_app:app", host="0.0.0.0", port=8001, reload=True)

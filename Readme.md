@@ -97,7 +97,7 @@ pip install -r requirements.txt
 1. Start the FastAPI server that serves the VGG16 model:
 
    ```bash
-   uvicorn main:app --reload
+   uvicorn backend:app --reload
    ```
 
    This will run the FastAPI server locally on `http://127.0.0.1:8000`.
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 2. Start the Streamlit application:
 
    ```bash
-   streamlit run app.py
+   streamlit run frontend_app.py
    ```
 
    The app will open in your default web browser, accessible at `http://localhost:8501`.
@@ -119,14 +119,6 @@ pip install -r requirements.txt
 - The app will validate the content using `EfficientNetB0` and make a prediction using the FastAPI server.
 
 ## Project Structure
-
-```plaintext
-image-classification-app/
-│
-├── app.py               # Main Streamlit application script
-├── main.py              # FastAPI application script
-├── requirements.txt     # Python dependencies
-└── README.md            # This README file
 ```
 
 ## Model Details

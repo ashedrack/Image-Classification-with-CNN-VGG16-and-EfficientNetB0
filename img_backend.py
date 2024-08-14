@@ -47,7 +47,7 @@ async def predict(file: UploadFile = File(...)):
         confidence = predicted_class  # Assuming predicted_class here represents confidence
 
         # Map the prediction to Cat or Dog
-        if predicted_class >= 1:
+        if confidence > 0.99:
             predicted_class_label = 1  # Cat
         else:
             predicted_class_label = 0  # Dog

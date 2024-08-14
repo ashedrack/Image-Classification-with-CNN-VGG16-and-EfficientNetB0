@@ -6,7 +6,7 @@ import tensorflow as tf
 import numpy as np
 
 # Set the FastAPI endpoint
-FASTAPI_URL = "http://127.0.0.1:8000/predict/"
+FASTAPI_URL = "https://image-classification-with-cnn-vgg16-and.onrender.com/predict/"
 
 # Title of the app
 st.title("Image Classification with VGG16")

@@ -9,7 +9,7 @@ import numpy as np
 FASTAPI_URL = "https://image-classification-with-cnn-vgg16-and.onrender.com/predict/"
 
 # Title of the app
-st.title("Image Classification with VGG16")
+st.title("Image Classification with CNN | VGG16 and image validation with EfficientNetB0 ")
 
 # Warning for users
 st.warning("**Important:** Please ensure the image is correctly labeled with 'cat' or 'dog' in the filename before uploading. "
